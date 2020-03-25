@@ -27,15 +27,7 @@ public class SpringMvcConfig  implements WebMvcConfigurer {
         return dataSource;
 
     }
-    @Bean
-    public ViewResolver getViewResolver()
-    {
-        InternalResourceViewResolver resolver=new InternalResourceViewResolver();
-        resolver.setPrefix("/templates/views");
-        resolver.setSuffix(".jsp");
-        return resolver;
 
-    }
     @Bean
     public AccountDao getAccountDao()
     {
