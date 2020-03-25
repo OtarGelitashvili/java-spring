@@ -17,6 +17,7 @@ import javax.sql.DataSource;
 @EnableWebMvc
 @ComponentScan(basePackages="com.example.demo")
 public class SpringMvcConfig  implements WebMvcConfigurer {
+
     @Bean
     public DataSource getDatasource() {
         DriverManagerDataSource dataSource=new DriverManagerDataSource();
